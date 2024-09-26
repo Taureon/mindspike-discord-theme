@@ -32,6 +32,7 @@
 	--mindspike-emoji-picker-color1: aqua;
 	--mindspike-profile-color: yellow;
 	--mindspike-profile-full-color: yellow;
+	--mindspike-bstrd: rgb(255, 0, 102) /* #ff0066 */
 }
 
 
@@ -66,6 +67,8 @@
 	--bg-brand: aqua;
 	--brand-200: #FF0066;
 	--text-positive: aqua;
+    --status-danger: #ff0066;
+    --text-link: #00ffff;
 }
 
 /* .colorBrand_dd4f85 {
@@ -679,7 +682,7 @@ body *, ::placeholder {
 /* menus */
 .menu_d90b3d {
 	background: black;
-	border: 1px solid magenta;
+	border: 1px solid yellow;
 	border-radius: 0;
 }
 
@@ -731,12 +734,12 @@ body *, ::placeholder {
 }
 
 .item_d90b3d.colorDanger_d90b3d {
-	color: red;
-	border-color: red;
+	color: var(--mindspike-bstrd);
+	border-color: var(--mindspike-bstrd);
 }
 
 .item_d90b3d.colorDanger_d90b3d.focused_d90b3d, .item_d90b3d.colorDanger_d90b3d:active {
-	background: red !important;
+	background: var(--mindspike-bstrd) !important;
 }
 
 .item_d90b3d.colorBrand_d90b3d {
@@ -2076,4 +2079,54 @@ body *, ::placeholder {
 
 .wrapper_efd8e6 .scroller_dcade6 {
 	overflow: scroll visible !important;
+}
+
+/* all the extra quickcss snippets i added */
+
+/* mindspike.css: adding border and color to emojis in context menu */
+.customItem_d90b3d {
+    border: 1px solid yellow;
+}
+
+/* mindspike.css: BSTRD colored DND activity icon */
+svg[fill="#f23f43"], rect[fill="#f23f43"] {
+    filter: invert(13%) sepia(100%) saturate(7196%) hue-rotate(331deg) brightness(100%) contrast(102%);
+}
+
+/* mindspike.css: jokzi ozo colored Idle activity icon */
+svg[fill="#f0b232"], rect[fill="#f0b232"] {
+    filter: brightness(200%) contrast(2003%) saturate(5920%);
+}
+
+/* mindspike.css: jokzi ozo colored Owner icon */
+.ownerIcon_a31c43 {
+    color: #ffff00;
+}
+
+/* mindspike.css: obesk colored Online activity icon */
+svg[fill="#23a55a"], rect[fill="#23a55a"] {
+    filter: saturate(5428%) hue-rotate(121deg) brightness(80%) contrast(2006%);
+}
+
+/* mindspike.css: obeskpink colored nitro icon */
+.premiumIcon_a31c43 {
+    color: #ff00ff;
+}
+
+/* mindspike.css: emoji autocomplete and channel selection highlight */
+/* NOTE: border colors seem to not work for whatever reason, sry abt that. dm a fix to @taureon_ */
+.result_e3c1c6[aria-selected=true],
+.clickable_bcc24e[aria-selected=true]>.base_bcc24e {
+    background-color: #ff00ff;
+    border-radius: 0px;
+}
+
+/* mindspike.css: smaller subtexts */
+small * {
+    font-size: 0.7rem;
+}
+
+/* mindspike.css: make inline code more apparent */
+code.inline {
+    border-color: #444;
 }
