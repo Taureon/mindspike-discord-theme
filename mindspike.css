@@ -2122,14 +2122,16 @@ svg[fill="#23a55a"], rect[fill="#23a55a"] {
 }
 
 /* mindspike.css: smaller subtexts */
+/* mindspike.css: apply opacity to links */
 small * {
     font-size: 0.7rem;
-}
-
-/* mindspike.css: apply opacity to links */
-.markup_f8f345 small:not(.inlineFormat_f8f345) {
     color: #ffffff;
     opacity: 0.5;
+}
+
+/* mindspike.css: make selected BSTRD text negative */
+.markup_f8f345 > h1 > span > span::selection {
+    color: #00FF99;
 }
 
 /* mindspike.css: make inline code more apparent */
