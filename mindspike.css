@@ -2126,7 +2126,7 @@ svg[fill="#23a55a"], rect[fill="#23a55a"] {
 small * {
     font-size: 0.7rem;
     color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.66;
 }
 
 /* mindspike.css: make selected BSTRD text negative */
