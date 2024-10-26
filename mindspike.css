@@ -2126,6 +2126,12 @@ small * {
     font-size: 0.7rem;
 }
 
+/* mindspike.css: apply opacity to links */
+.markup_f8f345 small:not(.inlineFormat_f8f345) {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
 /* mindspike.css: make inline code more apparent */
 code.inline {
     border-color: #444;
