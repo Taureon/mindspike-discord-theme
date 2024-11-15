@@ -2121,11 +2121,10 @@ svg[fill="#23a55a"], rect[fill="#23a55a"] {
     border-radius: 0px;
 }
 
-/* mindspike.css: smaller subtexts */
-/* mindspike.css: apply opacity to links */
+/* mindspike.css: smaller subtexts and apply opacity to links */
 small * {
     font-size: 0.7rem;
-    color: #ffffff;
+    color: var(--text-normal);
     opacity: 0.66;
 }
 
