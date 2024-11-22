@@ -1778,7 +1778,7 @@ body *, ::placeholder {
 
 /* stickers */
 .row_a708c4 {
-	column-gap: 36px !important;
+	/* column-gap: 36px !important; */
 	padding-left: 12px;
 	overflow: visible;
 }
