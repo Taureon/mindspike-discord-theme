@@ -2128,6 +2128,11 @@ small * {
     opacity: 0.66;
 }
 
+/* mindspike.css: fix color bug related to above line */
+small a span {
+    color: var(--text-link);
+}
+
 /* mindspike.css: make selected BSTRD text negative */
 .markup_f8f345 > h1 > span > span::selection {
     color: #00FF99;
